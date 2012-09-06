@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/arrow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/score" />
+
+    <EditText
+        android:id="@+id/arrow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/score" />
+
+    <EditText
+        android:id="@+id/arrow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/score" />
+
+    <Button
+        android:id="@+id/computeResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="computeResults"
+        android:text="@string/button_computeResults" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/validateResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="validateResults"
+        android:text="@string/button_validateResults" />
+
+    <TextView
+        android:id="@+id/resultsMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showScores" />
+    
+</LinearLayout>

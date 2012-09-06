@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/player1Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/player1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterPlayer1Results" />
+
+    <TextView
+        android:id="@+id/player2Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/player2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterPlayer2Results" />
+
+    <TextView
+        android:id="@+id/player3Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/player3Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterPlayer3Results" />
+
+    <TextView
+        android:id="@+id/player4Name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/player4Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterPlayer4Results" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="restart"
+        android:text="@string/button_restart" />
+
+</LinearLayout>
