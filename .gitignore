@@ -1,0 +1,8 @@
+*~
+*.swp
+.classpath
+.project
+.settings
+bin
+gen
+
