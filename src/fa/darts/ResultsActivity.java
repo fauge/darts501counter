@@ -17,7 +17,7 @@ import fa.darts.data.Player;
 
 public class ResultsActivity extends Activity {
 
-	private int results = 0;
+	private int results;
 	private Player currentPlayer;
 
 	@Override
@@ -33,6 +33,8 @@ public class ResultsActivity extends Activity {
 	}
 
 	public void computeResults(View view) {
+		results = 0;
+		
 		Intent intent = getIntent();
 		int current = intent.getIntExtra(ScoresActivity.CURRENT_PLAYER, 0);
 
@@ -59,6 +61,11 @@ public class ResultsActivity extends Activity {
 	}
 
 	public void validateResults(View view) {
+		// meaning that computeResults has not been called
+		if (currentPlayer == null) {
+			return;
+		}
+		
 		if (currentPlayer.isUpdatePossible(results)) {
 			currentPlayer.updateScore(results);
 
